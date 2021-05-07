@@ -1,61 +1,29 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en">
 
-      <!-- bootstrap -->
-      <link
-         rel="stylesheet"
-         href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-         crossorigin="anonymous"
-      />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hammock Getaway</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&family=Merriweather:wght@700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/jass.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
 
-      <!-- local styles -->
-      <link rel="stylesheet" href="assets/styles/style.css">
+<body>
+  <div class="flex-row align-center justify-center min-100-vh bg-primary">
+    <div class="col-12 col-md-9 flex-column align-center bg-light p-5">
+      <h1 class="text-primary">Hammock Getaway</h1>
+      <form id="search-form" class="form w-100">
+        <input id="search-input" class="form-input w-100" type="text" placeholder="Search!">
+        
+        <button class="btn btn-info btn-block">Click Me</button>
+      </form>
+    </div>
+  </div>
 
-      <title>Project 01 Boilerplate</title>
+  <script src="./assets/js/script.js"></script>
+</body>
 
-      <style></style>
-   </head>
-   <body class="h-100">
-      <!-- navigation -->
-      <nav class="h-25 color-white p-4" style="background:rgba(0,0,255,0.5)">
-         <a href="#here">
-            <div class="btn btn-dark rounded-0">Go here!</div>
-         </a>
-      </nav>
-
-      <!-- main grid -->
-      <main class="container text-center h-50 p-5">
-         <!-- feature row -->
-         <div class="row">
-            <div class="col">Div input city search</div>
-         </div>
-
-         <!-- feature row -->
-         <div class="row">
-            <div class="col">API Results Window</div>
-         </div>
-
-      </main>
-
-      <!-- footer -->
-      <footer class="h-25">
-         <div class="card bg-dark text-white rounded-0 h-100">
-            <div class="card-header">Footer</div>
-            <div class="card-body">
-               <div>github: <a href="#github-repo">project repo</a></div>
-            </div>
-         </div>
-      </footer>
-
-      <!-- JS  -->
-      <!-- script A -->
-      <script src="/assets/scriptA.js"></script>
-
-      <!-- script B -->
-      <script src="/assets/scriptB.js"></script>
-   </body>
 </html>
