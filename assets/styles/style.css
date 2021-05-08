@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+}
+:root {
+    --primary:rgba(3, 41, 112, 0.795);
+    --secondary: lightblue;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+main {
+    display: block;
+}
+h1,
+h2, 
+h3,
+h4 {
+    margin-left: 2rem;
+}
+
+header {
+    padding: 15px 10px 15px 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 20vh;
+}
+
+header h1 {
+    color: var(--secondary);
+    padding: 5px 10px;
+    margin: 0;
+    font-size: 4rem;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+nav a {
+    padding: 5px 40px;
+    color: var(--secondary);
+    margin-right: 10px;
+    font-size: 1.4rem;
+}
+nav a:last-child {
+    margin-right: 0;
+}
+a:hover {
+    color: white;
+}
+
+form {
+    display: inline-block;
+    align-items: center;
+    height: 15vh;
+    margin-left: 14rem;
+}
+
+#search-input {
+    width: 80%;
+    padding: 0;
+  
+    align-items: center;
+}
+#submit-button {
+    width: 10%;
+    padding: 0;
+
+}
+
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+main h4{
+    font-size: 4rem;
+}
+section {
+    height: 70vh;
+    text-align: center;
+    font-size: 2rem;
+    
+}
+
+footer {
+    background: var(--primary);
+    color: var(--secondary);
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+a {
+color: var(--secondary);
+padding: 4px;
+font-size: 1.4rem;
+margin: 0 3rem 0.1rem;
+display: inline-block;
+}
+@media screen and (max-width: 768px) {
+    html, body{
+        margin:none;
+    }
+    header{
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 10px;
+        flex-wrap: wrap;
+        width: 100%;
+        
+    }
+    header h1 {
+        justify-content: center;
+        font-size: 3rem;
+        text-align: center;
+        margin: 0;
+    }
+    .flex-row, .flex-column {
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #search-form {
+        margin: 0px;
+        padding: 0px;
+    }
+    footer {
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        font-size: 5vw;
+        display: flex;
+        flex-direction: column;
+    }
+    a {
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0;
+        font-size: 3vw;
+        display: flex;
+    }
+}
