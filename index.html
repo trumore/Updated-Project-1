@@ -18,6 +18,7 @@
   </head>
 
   <body>
+    
     <!-- navigation -->
     <header class="flex-container" style="background: var(--primary)">
       <h1>Left<em>Ease</em></h1>
@@ -40,19 +41,19 @@
       </div>
 
       <!-- feature row -->
-      <div class="flex-row align-center justify-cener min-100-vh">
+      <div id="about" class="flex-row align-center justify-cener min-100-vh">
         <div class="col-12 col-md-9 flex-column align-center">
-           <section id="about">
+           <section id="about-us">
               <h4>About Us</h4>
                   <p><em>LeftEase is the finest cooking app where you have the ability to search receipe by ingrediants and it makes this a fine choice if you have aleftover food or no idea how to turn it into a tasty dip.<em></em></p>
            </section>
         </div>
       </div>
       <!-- Div to display recipe  -->
-      <div id="recipe" class="flex-row align-center justify-cener min-100-vh" style = "background-color: aqua;">
+      <div id="recipe" class="flex-row align-center justify-cener min-100-vh" style = "display: none;">
         <div class="col-12 col-md-9 flex-column align-center">
            <section id="recipe-section">
-              <h4></h4>
+              <h4>Something will return</h4>
                   <p></p>
            </section>
         </div>
@@ -71,10 +72,16 @@
       </div>
     </footer>
     <!-- JS  -->
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- JS  -->
     <script src="assets/scripts/script.js"></script>
     <!-- script A -->
     <script src="assets/scripts/spoonacular.js"></script>
     <!-- script B -->
     <script src="assets/scripts/openTrip.js"></script>
+    
+    
+
   </body>
 </html>
