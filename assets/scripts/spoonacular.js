@@ -7,7 +7,7 @@ var ingredientButton = document.getElementById("submit-button");
 function getIngredient() {
     event.preventDefault();
     var ingredientSearch = document.getElementById("search-input").value;
-    var requestUrl = "https://api.spoonacular.com/recipes/findByIngredients?apiKey=0b52128a7a6341f58a4008807c5a9bca&ingredients=" + ingredientSearch + "&number=1"
+    //var requestUrl = "https://api.spoonacular.com/recipes/findByIngredients?apiKey=0b52128a7a6341f58a4008807c5a9bca&ingredients=" + ingredientSearch + "&number=1"
     console.log("click");
     console.log(ingredientSearch);
     fetch(requestUrl)
@@ -17,7 +17,6 @@ function getIngredient() {
     .then(function(data) {
         console.log(data);
         
-
     })
 };
 
@@ -29,3 +28,8 @@ ingredientButton.addEventListener("click", getIngredient);
 
 //GetElementById - container to display image
 //  set attribute ("src", response.image)
+
+//4aae36be2d19435e91736ce8e7711fee
+//872bc99d756a4f50a85f8f88f801cdb5
+//ad074955fa2a4c79a5b3f5d5a65fc461
+
