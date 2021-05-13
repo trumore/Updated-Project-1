@@ -174,3 +174,7 @@ display: inline-block;
         display: flex;
     }
 }
+
+.headFont {
+    font-family: 'Barlow Condensed', sans-serif;
+}
