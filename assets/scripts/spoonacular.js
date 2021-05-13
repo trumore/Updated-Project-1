@@ -28,30 +28,42 @@ function getIngredient() {
 }
 
 function renderRecipe(data) {
-  var ingredientSearch = document.getElementById("search-input").value;
   var recipeTitle = data[0].title;
   var imageUrl = data[0].image;
   var dishImage = document.createElement('img');
   var dishDescription = data[0].title;
   var recipeSection = document.getElementById('recipe-section');
+  var sectionImage = document.getElementsByTagName('img')
   var usedIngredientCount = data[0].usedIngredientCount;
   var missedIngredientCount = data[0].missedIngredientCount;
-
+  var imageUrl = data[0].image
   document.getElementById('recipe-header').textContent = recipeTitle;
-  dishImage.setAttribute('src', imageUrl);
-  console.log(dishImage);
-  dishImage.setAttribute('alt', dishDescription);
-  dishImage.setAttribute('id', 'dish-image');
-  recipeSection.append(dishImage);
+  // dishImage.setAttribute('src', imageUrl);
+  // dishImage.setAttribute('alt', dishDescription);
+  // dishImage.setAttribute('id', 'dish-image');
+  // sectionImage.append(dishImage);
+  document.getElementById('recipe-image').setAttribute('src', imageUrl);
 
-  // var usedIngredient = data[0].usedIngredients[0].original;
-  // console.log(usedIngredient)
-  // var ingredientsList = getElementById('ingredients-list');
-  // for (let i = 0; i < usedIngredientCount; i++) {
-  //   listItems.innerHTML = listItems.innerHTML + usedIngredient[i];
-  //   var listItems = document.createElement('li');
-  //   console.log(listItems)
-  //   ingredientsList.appendChild(listItems);
+
+  var ingredientsList = document.createElement('p');
+    ingredientsList.setAttribute('id', 'ingredients-list');
+    recipeSection.appendChild(ingredientsList);
+
+  for (let i = 0; i < usedIngredientCount; i++) {
+    var usedIngredient = data[0].usedIngredients[i].original
+    console.log(usedIngredient)
+    document.getElementById('ingredients-list').innerHTML += usedIngredient + ";" + "<br>";
+  }
+  
+  for (let i = 0; i < missedIngredientCount; i++) {
+  var missedIngredient = data[0].missedIngredients[i].original
+  console.log(missedIngredient)
+  document.getElementById('ingredients-needed').innerHTML += missedIngredient + ";" + "<br>";
+  }
+
+    
+    
+    
       
 
    
@@ -59,22 +71,6 @@ function renderRecipe(data) {
 }
 
 
-
-// document.body.appendChild(test);
-// test.appendChild(ul);
-
-// for (var i=0; i<array.length; i++){
-
-//     var li=document.createElement('li');
-
-//     ul.appendChild(li);
-//     li.innerHTML=li.innerHTML + array[i];
-
-
-}
-
-
- 
   
 
 ingredientButton.addEventListener("click", getIngredient);

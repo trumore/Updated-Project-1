@@ -2,8 +2,8 @@
 
 
 $("button").click(function() {
-    $("#section1").text("Previous text is hidden and new text is displayed")
-   
+    
+    $("#about").hide();
+    $("#recipe-section").show();
 
 })
-

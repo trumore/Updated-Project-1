@@ -89,14 +89,24 @@ form {
     align-items: center;
 }
 
-main h4{
-    font-size: 4rem;
+main h4, h5{
+    font-size: 3rem;
 }
 section {
     height: 70vh;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     
+}
+
+
+#recipe-section{
+    background-color: yellowgreen;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 60vw;
+    height: 90vh;
 }
 
 footer {
