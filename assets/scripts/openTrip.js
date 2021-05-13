@@ -3,7 +3,4 @@
 
 // //})
 
-$("button").click(function() {
-    
-    $("#about").hide();
-})
+
