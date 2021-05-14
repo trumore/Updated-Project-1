@@ -60,7 +60,7 @@ form {
     display: inline-block;
     align-items: center;
     height: 15vh;
-    margin-left: 14rem;
+    
 }
 
 #search-input {
@@ -80,6 +80,7 @@ form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .flex-column {
