@@ -96,8 +96,7 @@ main h4, h5{
 section {
     height: 70vh;
     text-align: center;
-    font-size: 1rem;
-    
+    font-size: 1rem;  
 }
 
 .row {
@@ -115,20 +114,24 @@ section {
 }
 
 #recipe-section, #instructions-section {
-    background-color: yellowgreen;
+    background-color: orange;
     display: flex;
     flex-direction: column;
     width: 45vw;
     border: 10px solid var(--primary);
     margin: 1.2rem 1.5rem 1.2rem 1.5rem;
     padding: 2px 0 2px 0;
+    height: fit-content;
 }
 
+
 #recipe-image {
-    width: 20vw;
+    width: 30vw;
     justify-content: center;
     display: flex;
     border: 10px solid var(--primary);
+    position: relative;
+    bottom: 130px; left: 17%;
 }
 footer {
     background: var(--primary);
