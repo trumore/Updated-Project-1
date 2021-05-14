@@ -52,7 +52,7 @@ function renderRecipe(data) {
       return response.json();
     })
     .then(function (data) {
-    
+      document.getElementById('instructions-list').innerHTML ="";
       for (let i = 0; i < data[0].steps[i].step.length; i+=1) {
         var insructions = data[0].steps[i].step;
         console.log (insructions)
@@ -60,7 +60,6 @@ function renderRecipe(data) {
       }
     });
 
-   
 
   var ingredientsList = document.createElement('p');
     ingredientsList.setAttribute('id', 'ingredients-list');
@@ -79,14 +78,6 @@ function renderRecipe(data) {
   console.log(missedIngredient)
   document.getElementById('ingredients-needed').innerHTML += missedIngredient + ";" + "<br>";
   }
-
-    
-    
-    
-      
-
-   
-
 }
 
 

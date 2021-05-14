@@ -7,3 +7,4 @@ $("button").click(function() {
     $("#recipe-section, #instructions-section").show();
 
 })
+
