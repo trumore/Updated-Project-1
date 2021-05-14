@@ -100,14 +100,30 @@ section {
     
 }
 
-
-#recipe-section{
-    background-color: yellowgreen;
-    align-items: center;
-    flex-direction: column;
+.row {
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    width: 60vw;
-    height: 90vh;
+    justify-content: center;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+#recipe-column{
+    background-color: yellowgreen;
+    display: flex;
+    flex-direction: column;
+}
+
+#instructions-column{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
