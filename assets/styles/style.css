@@ -91,12 +91,12 @@ form {
 }
 
 main h4, h5{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 section {
     height: 70vh;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     
 }
 
@@ -110,22 +110,26 @@ section {
 }
 
 .column {
-    display: flex;
+    display: block;
     flex-direction: column;
 }
 
-#recipe-column{
+#recipe-section, #instructions-section {
     background-color: yellowgreen;
     display: flex;
     flex-direction: column;
+    width: 45vw;
+    border: 10px solid var(--primary);
+    margin: 1.2rem 1.5rem 1.2rem 1.5rem;
+    padding: 2px 0 2px 0;
 }
 
-#instructions-column{
-    background-color: aqua;
+#recipe-image {
+    width: 20vw;
+    justify-content: center;
     display: flex;
-    flex-direction: column;
+    border: 10px solid var(--primary);
 }
-
 footer {
     background: var(--primary);
     color: var(--secondary);
