@@ -3,6 +3,8 @@ var apiKey = "a4665615a30f4922b1cdd9ba14a85e5c";
 // var apiKey = "872bc99d756a4f50a85f8f88f801cdb5";
 // var apiKey = "ad074955fa2a4c79a5b3f5d5a65fc461";
 
+
+
 var ingredientButton = document.getElementById("submit-button");
 
 //Input button on click
@@ -15,6 +17,7 @@ function getIngredient() {
     "https://api.spoonacular.com/recipes/findByIngredients?apiKey=a4665615a30f4922b1cdd9ba14a85e5c&ingredients=" +
     ingredientSearch +
     "&number=1";
+  
   // console.log("click");
   // console.log(ingredientSearch);
   fetch(requestUrl)
@@ -25,7 +28,11 @@ function getIngredient() {
       console.log(data);
       renderRecipe(data);
     });
+    
+
 }
+
+
 
 function renderRecipe(data) {
   var recipeTitle = data[0].title;
@@ -43,6 +50,10 @@ function renderRecipe(data) {
   // dishImage.setAttribute('id', 'dish-image');
   // sectionImage.append(dishImage);
   document.getElementById('recipe-image').setAttribute('src', imageUrl);
+  var idEl = data[0].id;
+  console.log(idEl);
+  var instructionUrl = "https://api.spoonacular.com/recipes/" + idEl + "/analyzedInstructions?apiKey=a4665615a30f4922b1cdd9ba14a85e5c";
+    console.log(instructionUrl);
 
 
   var ingredientsList = document.createElement('p');
@@ -80,3 +91,5 @@ ingredientButton.addEventListener("click", getIngredient);
 
 //GetElementById - container to display image
 //  set attribute ("src", response.image)
+
+// https://api.spoonacular.com/recipes/324694/analyzedInstructions?apiKey=a4665615a30f4922b1cdd9ba14a85e5c
