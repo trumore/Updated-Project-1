@@ -62,7 +62,9 @@ function renderRecipe(data) {
     .then(function (data) {
       console.log(data);
     });
-    
+
+
+
   var ingredientsList = document.createElement('p');
     ingredientsList.setAttribute('id', 'ingredients-list');
     recipeSection.appendChild(ingredientsList);
@@ -70,13 +72,13 @@ function renderRecipe(data) {
   for (let i = 0; i < usedIngredientCount; i++) {
     var usedIngredient = data[0].usedIngredients[i].original
     console.log(usedIngredient)
-    document.getElementById('ingredients-list').innerHTML += usedIngredient + ";" + "<br>";
+    document.getElementById('ingredients-list').innerHTML = usedIngredient + ";" + "<br>";
   }
   
   for (let i = 0; i < missedIngredientCount; i++) {
   var missedIngredient = data[0].missedIngredients[i].original
   console.log(missedIngredient)
-  document.getElementById('ingredients-needed').innerHTML += missedIngredient + ";" + "<br>";
+  document.getElementById('ingredients-needed').innerHTML = missedIngredient + ";" + "<br>";
   }
 
     
