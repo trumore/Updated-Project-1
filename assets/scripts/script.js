@@ -4,6 +4,6 @@
 $("button").click(function() {
     
     $("#about").hide();
-    $("#recipe-section").show();
+    $("#recipe-section, #instructions-section").show();
 
 })
