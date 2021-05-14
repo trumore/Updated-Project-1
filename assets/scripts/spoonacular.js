@@ -55,7 +55,14 @@ function renderRecipe(data) {
   var instructionUrl = "https://api.spoonacular.com/recipes/" + idEl + "/analyzedInstructions?apiKey=a4665615a30f4922b1cdd9ba14a85e5c";
     console.log(instructionUrl);
 
-
+    fetch(instructionUrl)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+    });
+    
   var ingredientsList = document.createElement('p');
     ingredientsList.setAttribute('id', 'ingredients-list');
     recipeSection.appendChild(ingredientsList);
