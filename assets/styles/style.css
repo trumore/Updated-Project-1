@@ -131,7 +131,7 @@ section {
     display: flex;
     border: 10px solid var(--primary);
     position: relative;
-    bottom: 130px; left: 17%;
+    bottom: 130px; left: 17%; top: 5px;
 }
 footer {
     background: var(--primary);
