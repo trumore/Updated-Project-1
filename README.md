@@ -21,6 +21,9 @@ At the landing page, simply type in a list of ingredients that you have in your 
 ![leftease-landing](assets/images/leftease-landing.png)
 ![leftease-result](assets/images/leftease-result.png)
 
+# Credits:
+Built by: Irina Pyak, Rafiun Nessa, and Tom Rumore
+
 # Link to Page: 
 
 https://trumore.github.io/Updated-Project-1/
