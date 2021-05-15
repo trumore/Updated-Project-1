@@ -17,6 +17,10 @@ At the landing page, simply type in a list of ingredients that you have in your 
 - Google Fonts API
 - Spoonacular API
 
+# Screenshots:
+![leftease-landing](assets/images/leftease-landing.png)
+![leftease-result](assets/images/leftease-result.png)
+
 # Link to Page: 
 
 https://trumore.github.io/Updated-Project-1/
