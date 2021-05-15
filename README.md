@@ -1,53 +1,23 @@
-# project01-boilerplate 🚀
-A boilerplate suggestion for project01
+# Title: LeftEase
 
-## 🌎 [Live](https://ronerlih.github.io/project01-boilerplate/)  (github pages)
+# Purpose: 
+As a user who struggles to come up with something to cook for dinner, I want a simple, easy to use app 
+where i can type in a few ingredients that are in my fridge, and it will randomly generate both a recipe,
+AND a shopping list of ingredients I will need at the store, so that I can make creative new dinners without
+having to think about what to make!
 
-## why?
+# Instructions:
+At the landing page, simply type in a list of ingredients that you have in your Refridgerator that you want to use in a recipe into the input field. Hit enter, or click search, and Left-Ease will generate a unique recipe for you along with a shopping list of ingredients you will need that you don't already have. 
 
-> To have a suggested scuffolding for a clear seperation of code between the team members for agile development.
+# Built Using:
+- HTML
+- CSS
+- Javascript
+- Bootstrap styling
+- Google Fonts API
+- Spoonacular API
 
-## How to use
-Either use as a reference, recreate from sratch, copy the files, fork, or clone the repo.
+# Link to Page: 
 
-## Layout
-<img src="assets/images/mockup.png" style="border:1px solid black">
+https://trumore.github.io/Updated-Project-1/
 
-#### Wireframe
-<img src="assets/images/wireframe.jpg" style="border:1px solid black">
-
-#### Suggested file structure
-```sh
-.
-├── README.md # 📖
-├── assets # for the app and project management 
-│   ├── images
-│   │   ├── features.png
-│   │   ├── mockup.png
-│   │   ├── wireframe.drawio
-│   │   └── wireframe.jpg
-│   ├── scripts
-│   │   ├── scriptA.js
-│   │   └── scriptB.js
-│   └── styles
-│       └── style.css
-└── index.html # landing page
-```
-#### Suggested feature-task seperation
-<img src="assets/images/features.png" style="border:1px solid black">
-
-
-#### Helpful links:
-- **Readme suggestion**: https://columbia.bootcampcontent.com/columbia-bootcamp/cu-nyc-virt-fsf-pt-03-2021-u-c/-/blob/master/07-Project-1/06-Class-Notes/good-readme-guide.md
-
-- **Project 01 prep**: https://columbia.bootcampcontent.com/columbia-bootcamp/cu-nyc-virt-fsf-pt-03-2021-u-c/-/blob/master/07-Project-1/06-Class-Notes/project-01-prep.md
-
-- **project week (07)**: https://columbia.bootcampcontent.com/columbia-bootcamp/cu-nyc-virt-fsf-pt-03-2021-u-c/-/tree/master/07-Project-1
-
-- **git branching**: https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows
-
-* 🌟 Create and protect repo instructions:
-    * **Repo setup:** https://columbia.bootcampcontent.com/columbia-bootcamp/cu-nyc-virt-fsf-pt-03-2021-u-c/-/tree/master/06-Server-Side-APIs/01-Activities/25-Stu_Git-Repo-Setup
-    * **Invite collaborators:** https://columbia.bootcampcontent.com/columbia-bootcamp/cu-nyc-virt-fsf-pt-03-2021-u-c/-/tree/master/06-Server-Side-APIs/01-Activities/25-Stu_Git-Repo-Setup
-
-# 🏂 Good luck!! 🏂
